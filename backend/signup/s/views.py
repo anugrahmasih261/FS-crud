@@ -30,3 +30,21 @@ class SignupDelet(generics.DestroyAPIView):
           serializer_class = SignupSerializer
 
 
+# for searching 
+
+from rest_framework import generics
+from .models import Signup
+from .serializers import SignupSerializer
+
+class SignupSearchView(generics.ListAPIView):
+    serializer_class = SignupSerializer
+    search_fields = ['username']
+
+    def get_queryset(self):
+        query = self.request.query_params.get('query', '')
+        queryset = Signup.objects.all()
+
+        if query:
+            queryset = queryset.filter(username__icontains=query)
+
+        return queryset

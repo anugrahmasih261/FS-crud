@@ -5,6 +5,8 @@ import Footer from './components/common/Footer';
 import List from './components/List';
 import Signup from './components/Signup';
 import Update from './components/Update';
+import Search from './components/Search'
+import Search1 from './components/Search1'
 import { useState } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -21,6 +23,9 @@ function App() {
       <Route path='/' element={<List xyzb={xyzb} />} />
       <Route path='signup' element={<Signup />} />
       <Route path='update' element={<Update xyza={xyza} List={<List xyzb={xyzb} />} />} />
+      <Route path='search' element={<Search />} />
+      <Route path='searchb' element={<Search1 />} />
+
       
 
     </Routes>
