@@ -48,3 +48,26 @@ class SignupSearchView(generics.ListAPIView):
             queryset = queryset.filter(username__icontains=query)
 
         return queryset
+
+
+
+
+from rest_framework import status
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from .models import Signup
+
+@api_view(['POST'])
+def check_user(request):
+    username = request.data.get('username', '')
+    password = request.data.get('password', '')
+
+    try:
+        user = Signup.objects.get(username=username)
+        if user.password == password:
+            return Response({"exists": True})
+        else:
+            return Response({"exists": False})
+    except Signup.DoesNotExist:
+        return Response({"exists": False})
+
