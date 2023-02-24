@@ -3,6 +3,7 @@ import axios from 'axios';
 import {useState, useEffect} from 'react';
 import list from '../assets/css/list.css'
 import { useNavigate } from 'react-router';
+import User from '../assets/img/user.svg'
 
 function List({xyzb}) {
 
@@ -48,7 +49,8 @@ function List({xyzb}) {
 
   return (
     <div className='App'>
-      {age.results && age.results.length >0 && age.results.map((a) =>(<div>
+      {age.results && age.results.length >0 && age.results.map((a) =>(<div className='box'>
+        <img src={User} alt="" className='user' />
         <h1 id="data">Username= {a.username}</h1>
         <h1 id="data">Email= {a.email}</h1>
         <h1 id="data">Password= {a.password}</h1>

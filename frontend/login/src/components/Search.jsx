@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import search from '../assets/css/search.css'
 
 const  SignupSearch = () => {
   const [query, setQuery] = useState('');
@@ -14,13 +15,15 @@ const  SignupSearch = () => {
   };
 
   return (
-    <div>
+
+    <div className='container'>
+      <h className="title">Welcome to Masih Search engine</h>
       <form onSubmit={handleSearch}>
         <label>
-          Search:
-          <input type="text" value={query} onChange={(event) => setQuery(event.target.value)} />
+          <h id="tee">Search Here:</h>
+          <input id='see' type="text" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Created by Masih type here!" />
         </label>
-        <button  type="submit">Search</button>
+        <button className='btn' type="submit">Search</button>
       </form>
       { data && data.results && data.results.length > 0 && data.results.map((data) => (
         <div key={data.id}>

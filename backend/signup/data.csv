@@ -1,9 +1,9 @@
-id,username,email,password
-11,brandon,brandon@gmail.com,brandon
-12,avanti,avanti@gmail.com,avanti@123
-14,abc,abc@masih.com,masih
-16,sajid bhai,sajid@masih.com,sdfghj
-21,create,anugrahmasih1012@gmail.com,creatednow
-22,new,check@masih.com,checking
-24,The founder Masih,anu@masih.com,masih.com
-25,prashant,prashant@rajput.com,rajputthegreate
+id,username,emailpassword,image_url,Ellipsis
+11,brandon,brandon@gmail.com,brandon,http://res.cloudinary.com/dpy6atdb2/image/upload/v1674081671/a8czaoaljvthfex5of5n.png
+12,avanti,avanti@gmail.com,avanti@123,http://res.cloudinary.com/dpy6atdb2/image/upload/v1674081702/admxoyh6frwe7zhwckwu.png
+14,abc,abc@masih.com,masih,http://res.cloudinary.com/dpy6atdb2/image/upload/v1677106715/arg41fd9rb99d22ggidy.webp
+16,sajid bhai,sajid@masih.com,sdfghj,http://res.cloudinary.com/dpy6atdb2/image/upload/v1674250234/fw9yhr63wflb7qety7wu.png
+21,create,anugrahmasih1012@gmail.com,creatednow,http://res.cloudinary.com/dpy6atdb2/image/upload/v1674590757/xxgrtrsfhbc9jwchbto5.png
+22,new,check@masih.com,checking,http://res.cloudinary.com/dpy6atdb2/image/upload/v1674590912/qkjwbjp7mcl81kwxqmgh.png
+24,The founder Masih,anu@masih.com,masih.com,http://res.cloudinary.com/dpy6atdb2/image/upload/v1677111177/mz2di4yuakcwz97unfyk.webp
+25,prashant,prashant@rajput.com,rajputthegreate,http://res.cloudinary.com/dpy6atdb2/image/upload/v1677176998/aok4wrmlpmspd7fgjjli.jpg
